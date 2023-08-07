@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  max-width: 30.837ch * 2;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  word-break: keep-all;
+}
+
+img,
+picture,
+svg,
+canvas,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.viewport {
+  height: 100dvh;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @at-root {
+    @media (width > 45rem) {
+      & {
+        padding-inline: 2.5rem;
+        max-width: 85rem;
+      }
+    }
+    @media (width > 70rem) {
+      & {
+        max-width: 90rem;
+        padding-inline: 5rem;
+      }
+    }
+  }
+  // &--width-fixed {
+  //   width: 70rem;
+  //   padding-inline: 5rem;
+  // }
+}
+
+.week {
+  .center {
+    ol > li {
+      max-width: 30.837ch * 2;
+      margin-bottom: 0.25rem;
+      &:last-child {
+        margin-bottom: unset;
+      }
+    }
+  }
+}
+
+#canvas {
+}
