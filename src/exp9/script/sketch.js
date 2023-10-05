@@ -7,7 +7,7 @@ let windMag = 1; // 바람의 세기, x 방향으로 가속
 let frictionC = 0.5; //감속마찰 나타내는 값, 날아가는 동안 속도가 감소하는 정도
 
 function setup() {
-  setSketchContainer(3 / 2, 'canvas'); // id? 캔버스 비율
+  setSketchContainer(3 / 2, 'canvas');
 
   gravity = createVector(0, gravityMag);
 

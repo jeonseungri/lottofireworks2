@@ -45,6 +45,7 @@ video {
 }
 
 .container {
+  /* 자동 설정으로 자동 중앙정렬 */
   margin-inline: auto;
   padding-inline: 1.25rem;
 }
